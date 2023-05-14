@@ -24,5 +24,13 @@ public class Produtos {
         return quantidade;
     }
 
+    public int remover(int item) {
+        if (quantidade < item) {
+            System.out.println("Não é possível remover mais nenhum item do estoque.");
+        }
+        return this.quantidade -= item;
+    }
+
+
 
 }
