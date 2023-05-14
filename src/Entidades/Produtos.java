@@ -31,6 +31,10 @@ public class Produtos {
         return this.quantidade -= item;
     }
 
+    public double valorTotal() {
+        return quantidade * preco;
+    }
+
 
 
 }
