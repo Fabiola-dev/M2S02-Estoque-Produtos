@@ -35,6 +35,12 @@ public class Produtos {
         return quantidade * preco;
     }
 
+    public String toString() {
+        return "Existem " + this.quantidade + " pacotes de " +
+                this.nome + " no valor de " + this.preco +
+                " no estoque. O valor total no estoque é de " + valorTotal();
+    }
+
 
 
 }
