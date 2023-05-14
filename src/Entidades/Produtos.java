@@ -19,4 +19,10 @@ public class Produtos {
     public void setPreco(Double preco) { this.preco = preco; }
     public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
 
+    public int adicionar(int item) {
+        this.quantidade += item;
+        return quantidade;
+    }
+
+
 }
